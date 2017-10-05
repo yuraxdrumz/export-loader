@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "A webpack loader that allowes to write a Golang style exports.",
   "main": "dist/bundle.js",
+  "repository": "yuraxdrumz/export-loader",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set DEBUG=* && webpack",
