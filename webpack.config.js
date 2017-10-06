@@ -11,8 +11,13 @@ fs.readdirSync('node_modules')
   })
 
 module.exports = {
+  // resolveLoader: {
+  //   alias: {
+  //     'export-loader': path.join(__dirname, 'export-loader.js')
+  //   }
+  // },
   externals:nodeModules,
-  entry: './export-loader.js',
+  entry: './index.js',
   target: 'node',
   // externals: nodeModules,
   output: {
@@ -30,6 +35,11 @@ module.exports = {
           presets: ["env"]
         }
       },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /(node_modules)/,
+      //   loader:"export-loader",
+      // },
     ]
   }
 };

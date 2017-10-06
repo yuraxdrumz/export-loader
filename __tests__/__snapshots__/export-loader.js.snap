@@ -24,8 +24,12 @@ Object {
 Public,
 SoPublic,
 }",
-  "names": "Public,
-SoPublic,
+  "names": Array [
+    "Public",
+    "
+SoPublic",
+    "
 ",
+  ],
 }
 `;

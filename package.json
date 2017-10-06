@@ -6,7 +6,7 @@
   "repository": "yuraxdrumz/export-loader",
   "scripts": {
     "test": "./node_modules/.bin/jest",
-    "start": "set DEBUG=* && webpack",
+    "start": "set DEBUG=parser,norequire && webpack",
     "start:prod": "webpack -p"
   },
   "keywords": [

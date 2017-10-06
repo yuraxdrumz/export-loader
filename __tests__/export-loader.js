@@ -2,7 +2,6 @@ process.env.DEBUG = 'norequire'
 const { generateExports } = require('../esprima')
 const exportLoader = require('../export-loader')
 const fs = require('fs');
-const escodegen = require('escodegen');
 const esprima = require('esprima');
 const path = require('path')
 
@@ -16,16 +15,16 @@ const data = `const Public = 'awsome'
 `
 
 test('should return func when called', () => {
-  expect(generateExports(escodegen, esprima)).toBeInstanceOf(Function)
+  expect(generateExports(esprima)).toBeInstanceOf(Function)
 });
 
 test('should return undefined when given unexisting file path', () => {
-  expect(generateExports(escodegen, esprima)()).toBeUndefined()
+  expect(generateExports(esprima)()).toBeUndefined()
 });
 
 test('should return object with filename, fields to be exported and string of export with fields to add to file content', () => {
 
-  expect(generateExports(escodegen, esprima)(__filename, data)).toMatchSnapshot()
+  expect(generateExports(esprima)(__filename, data)).toMatchSnapshot()
 });
 
 test('should return content passed with exports on it', () => {
