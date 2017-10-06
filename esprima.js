@@ -100,7 +100,7 @@ function generateExports(esprima) {
           }
         }
       }
-      names = names.split(',').filter((elem, index, self)=> index == self.indexOf(elem))
+      names = names.split(',').filter((elem, index, self)=> index == self.indexOf(elem.replace('\n','')))
       let finalExports = `export {\n${names}}`
       return { finalExports, fileName, names }
     }catch(e){
