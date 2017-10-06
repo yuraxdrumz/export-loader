@@ -12,7 +12,7 @@ fs.readdirSync('node_modules')
 
 module.exports = {
   externals:nodeModules,
-  entry: './no-export.js',
+  entry: './export-loader.js',
   target: 'node',
   // externals: nodeModules,
   output: {
