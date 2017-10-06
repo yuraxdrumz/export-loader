@@ -17,7 +17,7 @@ module.exports = {
   //   }
   // },
   externals:nodeModules,
-  entry: './index.js',
+  entry: './export-loader.js',
   target: 'node',
   // externals: nodeModules,
   output: {
