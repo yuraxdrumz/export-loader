@@ -13,11 +13,11 @@ fs.readdirSync('node_modules')
 module.exports = {
   // resolveLoader: {
   //   alias: {
-  //     'export-loader': path.join(__dirname, 'export-loader.js')
+  //     'export-loader': path.join(__dirname, 'src','export-loader.js')
   //   }
   // },
   externals:nodeModules,
-  entry: './export-loader.js',
+  entry: './src/export-loader.js',
   target: 'node',
   // externals: nodeModules,
   output: {

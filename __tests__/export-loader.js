@@ -1,17 +1,18 @@
-process.env.DEBUG = 'norequire'
-const { generateExports } = require('../esprima')
-const exportLoader = require('../export-loader')
+process.env.DEBUG = 'parser'
+const { generateExports } = require('../src/esprima')
+const exportLoader = require('../src/export-loader')
 const fs = require('fs');
 const esprima = require('esprima');
 const path = require('path')
 
-const data = `const Public = 'awsome'
-  const notPublic = function(){
-    console.log('this is private because the name is not capitalized!')
-  }
-  function SoPublic(){
-    console.log('blaaa')
-  }
+const data = `
+const Public = 'awsome'
+const notPublic = function(){
+  console.log('this is private because the name is not capitalized!')
+}
+function SoPublic(){
+  console.log('blaaa')
+}
 `
 
 test('should return func when called', () => {

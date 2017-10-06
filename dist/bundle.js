@@ -1,1 +1,81 @@
-module.exports=function(e){function r(n){if(t[n])return t[n].exports;var a=t[n]={i:n,l:!1,exports:{}};return e[n].call(a.exports,a,a.exports,r),a.l=!0,a.exports}var t={};return r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:n})},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},r.p="",r(r.s=1)}([function(e,r){e.exports=require("debug")},function(e,r,t){"use strict";function n(e){try{var r=this.resourcePath||l.resolve("./resourcePath.js"),t=i(s)(r,c(r,"utf8")),n=t.finalExports;e=e.replace(/export function/g,"function"),e=e.replace(/^export.{([\s\S]*?)}$/gm,""),e=e+"\n"+n,o(e)}catch(e){o(e)}return e}var a=t(2),i=a.generateExports,o=t(0)("norequire"),s=t(3),p=t(4),c=p.readFileSync,l=t(5);e.exports=n,e.exports.default=n},function(e,r,t){"use strict";function n(e){return function(r,t){try{var n="",i=e.parse(t,{sourceType:"module"}),o=i.body,s=!0,p=!1,c=void 0;try{for(var l,u=o[Symbol.iterator]();!(s=(l=u.next()).done);s=!0){var f=l.value;if("ExportNamedDeclaration"===f.type){var x=void 0;f.declaration&&"FunctionDeclaration"===f.declaration.type?(x=f.declaration.id.name,n+=x,n+=",\n"):f.specifiers.map(function(e){n+=e.exported.name,n+=",\n"})}if("ClassDeclaration"===f.type){var d=f.id.name;a("Class: "+d),d[0]===d[0].toUpperCase()&&(n+=d,n+=",\n")}if("ExpressionStatement"===f.type&&"AssignmentExpression"===f.expression.type){a(f);var m=void 0;try{m=f.expression&&f.expression.left&&f.expression.left.name?f.expression.left.name:"ignoring..."}catch(e){m=f.expression.callee.name}a("Expression: "+m),m[0]===m[0].toUpperCase()&&(n+=m,n+=",\n")}else if("ExpressionStatement"===f.type&&"MemberExpression"===f.expression.callee.type);else if("ExpressionStatement"===f.type){var y=void 0;try{y=f.expression.callee.id.name}catch(e){y=f.expression.callee.name}a("Expression: "+y),y[0]===y[0].toUpperCase()&&(n+=y,n+=",\n")}if("VariableDeclaration"===f.type){var v=void 0;if("NewExpression"===f.declarations[0].init.type||"CallExpression"===f.declarations[0].init.type)v=f.declarations[0].id.name;else try{v=f.declarations[0].init.callee.name}catch(e){v=f.declarations[0].id.name}a("Variable: "+v),v[0]===v[0].toUpperCase()&&(n+=v,n+=",\n")}if("FunctionDeclaration"===f.type){var E=void 0;try{E=f.id.name}catch(e){E=f.declarations[0].init.callee.name}a("Function: "+E),E[0]===E[0].toUpperCase()&&(n+=E,n+=",\n")}}}catch(e){p=!0,c=e}finally{try{!s&&u.return&&u.return()}finally{if(p)throw c}}n=n.split(",").filter(function(e,r,t){return r==t.indexOf(e.replace("\n",""))});return{finalExports:"export {\n"+n+"}",fileName:r,names:n}}catch(e){a("Could not read file: "+r+", error :"+e)}}}var a=t(0)("parser");e.exports={generateExports:n}},function(e,r){e.exports=require("esprima")},function(e,r){e.exports=require("fs")},function(e,r){e.exports=require("path")}]);
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function Bla() {}
+exports.Bla = Bla;
+
+/***/ })
+/******/ ]);
