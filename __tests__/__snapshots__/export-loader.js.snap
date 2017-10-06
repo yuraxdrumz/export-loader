@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return content passed with exports on it 1`] = `
+"const Public = 'awsome'
+  const notPublic = function(){
+    console.log('this is private because the name is not capitalized!')
+  }
+  function SoPublic(){
+    console.log('blaaa')
+  }
+
+export {
+Foo,
+Boo,
+Bla,
+Moo,
+}"
+`;
+
+exports[`should return object with filename, fields to be exported and string of export with fields to add to file content 1`] = `
+Object {
+  "fileName": "C:\\\\Users\\\\Yurasya\\\\Desktop\\\\no-export\\\\__tests__\\\\export-loader.js",
+  "finalExports": "export {
+Public,
+SoPublic,
+}",
+  "names": "Public,
+SoPublic,
+",
+}
+`;
