@@ -12,8 +12,8 @@ function exportLoader(content) {
     let { finalExports } = generateExports(esprima)(currentPath, readFileSync(currentPath,'utf8'))
     d(`finalExports is: ${finalExports}`)
     content = content
-      .replace(/(export function|export async function)/g,'function')
-      .replace(/(export async function)/g,'async function')
+      .replace(/export function/g,'function')
+      .replace(/export async function/g,'async function')
       .replace(/^export.{([\s\S]*?)}$/gm, '')
     content = content + '\n' + finalExports
     d(content)
