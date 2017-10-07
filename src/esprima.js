@@ -9,51 +9,54 @@ const { handleFunctionDeclaration }    = require('./handle-function-declaration'
  * */
 function generateExports(esprima) {
   return function (fileName, data){
-    try{
-      let names = {}
-      const insertName = hashMapToInject(names)
-      const { body } = esprima.parse( data, { sourceType: 'module'} )
-      for( let declaration of body ) {
-        const { type } = declaration
-        switch ( type ) {
-          case 'ExportNamedDeclaration':
-            handleExportNamedDeclaration(insertName, debug, declaration)
-            break
-          case 'ClassDeclaration':
-            handleClassDeclaration(insertName, debug, declaration)
-            break
-          case 'ExpressionStatement':
-            handleExpressionStatement(insertName, debug, declaration)
-            break
-          case 'VariableDeclaration':
-            handleVariableDeclaration(insertName, debug, declaration)
-            break
-          case 'FunctionDeclaration':
-            handleFunctionDeclaration(insertName, debug, declaration)
-            break
-          default:
-            debug(`An unhandled declaration type received: ${type}`)
-        }
+    if(!data) throw new Error('No data was received!')
+    let names = {}
+    const insertName = hashMapToInject(names)
+    const { body } = esprima.parse( data, { sourceType: 'module'} )
+    for( let declaration of body ) {
+      const { type } = declaration
+      switch ( type ) {
+        case 'ExportNamedDeclaration':
+          handleExportNamedDeclaration(insertName, debug, declaration)
+          break
+        case 'ClassDeclaration':
+          handleClassDeclaration(insertName, debug, declaration)
+          break
+        case 'ExpressionStatement':
+          handleExpressionStatement(insertName, debug, declaration)
+          break
+        case 'VariableDeclaration':
+          handleVariableDeclaration(insertName, debug, declaration)
+          break
+        case 'FunctionDeclaration':
+          handleFunctionDeclaration(insertName, debug, declaration)
+          break
+        default:
+          debug(`An unhandled declaration type received: ${type}`)
       }
-      debug(names)
-      const finalExports = `export {\n${Object.keys(names)}\n}`
-      return { finalExports, fileName, names:Object.keys(names) }
-    }catch(e){
-      debug(`Could not read file: ${fileName}, error :${e}`)
     }
+    debug(names)
+    let namesKeys = Object.keys(names)
+    const finalExports = `export {\n${namesKeys}\n}`
+    return { finalExports, fileName, names:namesKeys }
+
   }
 }
 function hashMapToInject(hashmap){
   return function insertName(name){
-    if(hashmap[name]){
-      d(`key:${name} already exists!`)
-    }else{
-      hashmap[name] = name
+    if(name[0] === name[0].toUpperCase()){
+      if(hashmap[name]){
+        d(`key:${name} already exists!`)
+      }else{
+        hashmap[name] = name
+      }
     }
+
   }
 }
 
 
 module.exports = {
   generateExports,
+  hashMapToInject
 }

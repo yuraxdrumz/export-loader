@@ -19,11 +19,10 @@ exports[`should return object with filename, fields to be exported and string of
 Object {
   "fileName": "C:\\\\Users\\\\Yurasya\\\\Desktop\\\\no-export\\\\__tests__\\\\export-loader.js",
   "finalExports": "export {
-Public,notPublic,SoPublic
+Public,SoPublic
 }",
   "names": Array [
     "Public",
-    "notPublic",
     "SoPublic",
   ],
 }

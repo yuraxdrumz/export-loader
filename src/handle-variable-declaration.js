@@ -1,9 +1,13 @@
 function handleVariableDeclaration(insertKeyFunc, debug, { declarations }){
   let name
-  if(!declarations[0].init.type) throw new Error(`Declarations was not passed in ${__filename}`)
-  switch (declarations[0].init.type){
+  let dec
+  if(declarations[0].init && declarations[0].init.type) dec = declarations[0].init.type
+  else dec = declarations[0].type
+  switch (dec){
     case 'NewExpression':
     case 'CallExpression':
+    case 'VariableDeclarator':
+    case 'VariableDeclaration':
       name = declarations[0].id.name
       break
     default:
@@ -12,6 +16,7 @@ function handleVariableDeclaration(insertKeyFunc, debug, { declarations }){
       }catch(e){
         name = declarations[0].id.name
       }
+      break
   }
   debug(`Variable: ${name}`)
   insertKeyFunc(name)

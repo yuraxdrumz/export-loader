@@ -3,7 +3,10 @@ function handleFunctionDeclaration(insertKeyFunc, debug, { id, declarations }){
     try{
       name = id.name
     }catch(e){
-      name = declarations[0].init.callee.name
+      if(declarations){
+        name = declarations[0].init.callee.name
+      }
+      debug(`Function: name is undefined, check handleFunctionDeclaration`)
     }
     debug(`Function: ${name}`)
     insertKeyFunc(name)
