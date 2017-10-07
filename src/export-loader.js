@@ -10,11 +10,12 @@ function exportLoader(content) {
   try{
     let currentPath = this.resourcePath || path.resolve("./test-utils/resourcePath.js")
     let { finalExports } = generateExports(esprima)(currentPath, readFileSync(currentPath,'utf8'))
+    d(`finalExports is: ${finalExports}`)
     content = content.replace(/export function/g,'function').replace(/^export.{([\s\S]*?)}$/gm, '')
     content = content + '\n' + finalExports
     d(content)
   }catch(e){
-    d(e)
+    d(`Failed on export loader main func with error:${JSON.stringify(e)}`)
   }
   return content
 }

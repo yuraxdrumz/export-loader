@@ -11,7 +11,7 @@ function SoPublic(){
 }
 
 export {
-Foo,Boo,Bla,Moo
+Utilizer,Public,B,D
 }"
 `;
 

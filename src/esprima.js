@@ -14,6 +14,10 @@ function generateExports(esprima) {
     const insertName = hashMapToInject(names)
     const { body } = esprima.parse( data, { sourceType: 'module'} )
     for( let declaration of body ) {
+      try{
+        debug(declaration.specifiers)
+
+      }catch(e){}
       const { type } = declaration
       switch ( type ) {
         case 'ExportNamedDeclaration':
@@ -31,11 +35,14 @@ function generateExports(esprima) {
         case 'FunctionDeclaration':
           handleFunctionDeclaration(insertName, debug, declaration)
           break
+        case 'ExportDefaultDeclaration':
+          debug(`Export default received, need to think what to do with it`)
+          break;
         default:
           debug(`An unhandled declaration type received: ${type}`)
       }
     }
-    debug(names)
+    debug(`names:${JSON.stringify(names)}`)
     let namesKeys = Object.keys(names)
     const finalExports = `export {\n${namesKeys}\n}`
     return { finalExports, fileName, names:namesKeys }
@@ -44,6 +51,7 @@ function generateExports(esprima) {
 }
 function hashMapToInject(hashmap){
   return function insertName(name){
+    if(typeof name !== 'string') debug(`name: ${JSON.stringify(name)} is not a string!!!`)
     if(name[0] === name[0].toUpperCase()){
       if(hashmap[name]){
         d(`key:${name} already exists!`)
@@ -51,8 +59,8 @@ function hashMapToInject(hashmap){
         hashmap[name] = name
       }
     }
-
   }
+
 }
 
 

@@ -1,9 +1,21 @@
-const Foo = 'foo'
 
-let Boo = 'boo'
+const Utilizer = function(parm1, parm2){
+  console.log(parm1, parm2)
+}
+export default function(){
+  console.log('dsadsasdasd')
+}
 
-var Bla = 'bla'
+export function Public(){
+  console.log('public')
+}
 
-function Moo(){
-  console.log('moooo')
+let B = '2'
+
+const D = '2'
+
+export {
+  Utilizer,
+  B,
+  D
 }
