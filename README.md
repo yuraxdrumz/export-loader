@@ -7,14 +7,9 @@ make sure you put export-loader before babel. Webpack reads loaders from right t
 ![instructions usage in webpack](https://i.imgur.com/mbwL1j0.png)
 
 ### now you can use golang style imports:
-variables like : Utilizer, ThisIsNotPrivate and Public will be exported because they are uppercased.
-export default remains the same, if you want export default you have to expicitly write it.
+![exmaple usage in js](https://i.imgur.com/n9zYIoS.png)
+## what about exisitng exports and export default?
+export default remains the same, if you want export default you have to explicitly write it.
 existing export definitions will remain untouched.
-![exmaple usage in js](https://i.imgur.com/8wguTXH.png)
-
 ### the loader will transform all uppercased variables to exports and simply append it to EOF
 ![end result](https://i.imgur.com/ghyPKbC.png)
-
-
-
-

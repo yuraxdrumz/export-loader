@@ -1,6 +1,6 @@
 {
   "name": "export-loader",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "description": "A webpack loader that allowes to write a Golang style exports.",
   "main": "dist/bundle.js",
   "repository": "yuraxdrumz/export-loader",
