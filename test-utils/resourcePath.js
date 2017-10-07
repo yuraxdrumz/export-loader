@@ -14,3 +14,7 @@ export function Public(){
 let B = '2'
 
 const D = '2'
+
+export function srivate(){
+
+}

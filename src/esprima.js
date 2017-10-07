@@ -19,6 +19,7 @@ function generateExports(esprima) {
 
       }catch(e){}
       const { type } = declaration
+      debug(type)
       switch ( type ) {
         case 'ExportNamedDeclaration':
           handleExportNamedDeclaration(insertName, debug, declaration)
@@ -50,9 +51,9 @@ function generateExports(esprima) {
   }
 }
 function hashMapToInject(hashmap){
-  return function insertName(name){
+  return function insertName(name, isExport){
     if(typeof name !== 'string') debug(`name: ${JSON.stringify(name)} is not a string!!!`)
-    if(name[0] === name[0].toUpperCase()){
+    if( name[0] === name[0].toUpperCase() || isExport ){
       if(hashmap[name]){
         d(`key:${name} already exists!`)
       }else{

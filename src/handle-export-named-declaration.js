@@ -9,7 +9,7 @@ function handleExportNamedDeclaration(insertKeyFunc, debug, { declaration, speci
   }
   if ( type && type === 'FunctionDeclaration' ) {
     name = id.name
-    insertKeyFunc(name)
+    insertKeyFunc(name, true)
   }else {
     try{
       specifiers.map(spec=>insertKeyFunc(spec.exported.name))

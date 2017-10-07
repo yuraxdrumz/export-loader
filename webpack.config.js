@@ -35,11 +35,11 @@ module.exports = {
           presets: ["env"]
         }
       },
-      {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        loader:"export-loader",
-      },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /(node_modules)/,
+      //   loader:"export-loader",
+      // },
     ]
   }
 };
