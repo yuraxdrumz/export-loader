@@ -18,3 +18,5 @@ const D = '2'
 export function srivate(){
 
 }
+
+

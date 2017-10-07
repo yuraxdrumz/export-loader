@@ -1,3 +1,3 @@
-export function bla(){
+export async function async(){
 
 }

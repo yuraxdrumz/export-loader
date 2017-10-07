@@ -11,7 +11,7 @@ function exportLoader(content) {
     let currentPath = this.resourcePath || path.resolve("./test-utils/resourcePath.js")
     let { finalExports } = generateExports(esprima)(currentPath, readFileSync(currentPath,'utf8'))
     d(`finalExports is: ${finalExports}`)
-    content = content.replace(/export function/g,'function').replace(/^export.{([\s\S]*?)}$/gm, '')
+    content = content.replace(/(export function|export async function)/g,'function').replace(/^export.{([\s\S]*?)}$/gm, '')
     content = content + '\n' + finalExports
     d(content)
   }catch(e){
