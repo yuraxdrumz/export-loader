@@ -2,7 +2,8 @@ const { handleAssignmentExpression } = require('./handle-assignment-expression')
 const { handleDefaultExpression } = require('./handle-default-expression')
 
 function handleExpressionStatement(insertKeyFunc, debug, { expression }){
-  if(expression.callee.type === 'MemberExpression'){ void(0)}
+  debug(`expression from handler is ${JSON.stringify(expression)}`)
+  if(expression.callee && expression.callee.type === 'MemberExpression'){ void(0)}
   else{
     switch (expression.type){
       case 'AssignmentExpression':

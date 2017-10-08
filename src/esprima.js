@@ -14,10 +14,6 @@ function generateExports(esprima) {
     const insertName = hashMapToInject(names)
     const { body } = esprima.parse( data, { sourceType: 'module'} )
     for( let declaration of body ) {
-      try{
-        debug(declaration.specifiers)
-
-      }catch(e){}
       const { type } = declaration
       debug(type)
       switch ( type ) {

@@ -18,7 +18,7 @@ function exportLoader(content) {
     content = content + '\n' + finalExports
     d(content)
   }catch(e){
-    d(`Failed on export loader main func with error:${JSON.stringify(e)}`)
+    d(`Failed on export loader main func with error:${e}`)
   }
   return content
 }
