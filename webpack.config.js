@@ -18,6 +18,7 @@ module.exports = {
   // },
   externals:nodeModules,
   entry: './src/export-loader.js',
+  // entry: './index.js',
   target: 'node',
   // externals: nodeModules,
   output: {

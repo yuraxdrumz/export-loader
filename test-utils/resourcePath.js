@@ -1,10 +1,14 @@
 
+export const d = '111'
+export const C = function(){
+
+}
+export let bla = 'sss'
+export var ggg = 'sadaads'
+
+
 const Utilizer = function(parm1, parm2){
   console.log(parm1, parm2)
-}
-
-export default function(){
-  console.log('dsadsasdasd')
 }
 
 export function Public(){
@@ -19,4 +23,31 @@ export function srivate(){
 
 }
 
+exports.out = function(){
 
+}
+exports.AlsoOut = function(){
+
+}
+
+exports.bla = '2'
+exports.bla2 = 2
+exports.bla3 = {
+  function(){
+
+  }
+}
+
+var Cat = module.exports = {
+
+}
+
+let app = {}
+
+app.get = function(){
+
+}
+
+export {
+  d,app
+}
