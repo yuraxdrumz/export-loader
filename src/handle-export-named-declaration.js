@@ -17,7 +17,7 @@ function handleExportNamedDeclaration(insertKeyFunc, debug, { declaration, speci
     try{
       specifiers.map(spec=>insertKeyFunc(spec.exported.name, true))
     }catch(e){
-      debug(`error in handleExportNamed:${JSON.stringify(e)}`)
+      debug(`error in handleExportNamed:${e}`)
     }
   }
 }

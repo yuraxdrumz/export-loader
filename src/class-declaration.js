@@ -1,5 +1,5 @@
 function handleClassDeclaration(insertKeyFunc, debug, { id }){
-  if(!id) debug(`id was not passed in ${__filename}`)
+  if(!id) throw new Error('handleClassDeclaration:id was not passed')
   let { name } = id
   debug(`Class: ${name}`)
   insertKeyFunc(name)

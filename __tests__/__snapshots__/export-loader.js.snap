@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should return content passed with exports on it 1`] = `
+exports[`general tests for main export-loader func and esprima(the parser) func should return content passed with exports on it 1`] = `
 "
 const Public = 'awsome'
 const notPublic = function(){
@@ -15,7 +15,7 @@ d,C,bla,ggg,Utilizer,Public,B,D,srivate,Cat
 }"
 `;
 
-exports[`should return object with filename, fields to be exported and string of export with fields to add to file content 1`] = `
+exports[`general tests for main export-loader func and esprima(the parser) func should return object with filename, fields to be exported and string of export with fields to add to file content 1`] = `
 Object {
   "fileName": "C:\\\\Users\\\\Yurasya\\\\Desktop\\\\no-export\\\\__tests__\\\\export-loader.js",
   "finalExports": "export {

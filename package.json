@@ -1,11 +1,12 @@
 {
   "name": "export-loader",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "description": "A webpack loader that allowes to write a Golang style exports.",
   "main": "dist/bundle.js",
   "repository": "yuraxdrumz/export-loader",
   "scripts": {
     "test": "./node_modules/.bin/jest",
+    "test:publish": "./node_modules/.bin/jest && codecov -t aad07c01-c90e-4b97-8806-7de3e173cde1",
     "start": "set DEBUG=parser,norequire && webpack",
     "start:prod": "webpack -p"
   },
@@ -35,5 +36,9 @@
   },
   "pre-commit": [
     "test"
-  ]
+  ],
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }
