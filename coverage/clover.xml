@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1507585191843" clover="3.2.0">
-  <project timestamp="1507585191843" name="All files">
+<coverage generated="1507620703194" clover="3.2.0">
+  <project timestamp="1507620703195" name="All files">
     <metrics statements="123" coveredstatements="105" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13" elements="203" coveredelements="170" complexity="0" loc="123" ncloc="123" packages="2" files="11" classes="11">
       <package name="src">
         <metrics statements="119" coveredstatements="101" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13"/>
-        <file name="class-declaration.js" path="C:\Users\Yurasya\Desktop\no-export\src\class-declaration.js">
+        <file name="class-declaration.js" path="/home/yurik/Desktop/export-loader/src/class-declaration.js">
           <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
           <line num="3" count="1" type="stmt"/>
@@ -12,7 +12,7 @@
           <line num="5" count="1" type="stmt"/>
           <line num="8" count="2" type="stmt"/>
         </file>
-        <file name="esprima.js" path="C:\Users\Yurasya\Desktop\no-export\src\esprima.js">
+        <file name="esprima.js" path="/home/yurik/Desktop/export-loader/src/esprima.js">
           <metrics statements="39" coveredstatements="34" conditionals="17" coveredconditionals="13" methods="4" coveredmethods="4"/>
           <line num="1" count="1" type="stmt"/>
           <line num="2" count="1" type="stmt"/>
@@ -54,7 +54,7 @@
           <line num="56" count="12" type="stmt"/>
           <line num="64" count="1" type="stmt"/>
         </file>
-        <file name="export-loader.js" path="C:\Users\Yurasya\Desktop\no-export\src\export-loader.js">
+        <file name="export-loader.js" path="/home/yurik/Desktop/export-loader/src/export-loader.js">
           <metrics statements="15" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="1" count="1" type="stmt"/>
           <line num="2" count="1" type="stmt"/>
@@ -72,7 +72,7 @@
           <line num="32" count="1" type="stmt"/>
           <line num="33" count="1" type="stmt"/>
         </file>
-        <file name="handle-assignment-expression.js" path="C:\Users\Yurasya\Desktop\no-export\src\handle-assignment-expression.js">
+        <file name="handle-assignment-expression.js" path="/home/yurik/Desktop/export-loader/src/handle-assignment-expression.js">
           <metrics statements="11" coveredstatements="9" conditionals="12" coveredconditionals="11" methods="1" coveredmethods="1"/>
           <line num="3" count="6" type="stmt"/>
           <line num="4" count="6" type="cond" truecount="4" falsecount="1"/>
@@ -86,7 +86,7 @@
           <line num="18" count="6" type="stmt"/>
           <line num="21" count="2" type="stmt"/>
         </file>
-        <file name="handle-default-expression.js" path="C:\Users\Yurasya\Desktop\no-export\src\handle-default-expression.js">
+        <file name="handle-default-expression.js" path="/home/yurik/Desktop/export-loader/src/handle-default-expression.js">
           <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="3" count="0" type="stmt"/>
           <line num="4" count="0" type="stmt"/>
@@ -95,7 +95,7 @@
           <line num="9" count="0" type="stmt"/>
           <line num="12" count="2" type="stmt"/>
         </file>
-        <file name="handle-export-named-declaration.js" path="C:\Users\Yurasya\Desktop\no-export\src\handle-export-named-declaration.js">
+        <file name="handle-export-named-declaration.js" path="/home/yurik/Desktop/export-loader/src/handle-export-named-declaration.js">
           <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
           <line num="5" count="7" type="stmt"/>
           <line num="6" count="7" type="cond" truecount="2" falsecount="0"/>
@@ -111,7 +111,7 @@
           <line num="20" count="1" type="stmt"/>
           <line num="25" count="2" type="stmt"/>
         </file>
-        <file name="handle-expression-statement.js" path="C:\Users\Yurasya\Desktop\no-export\src\handle-expression-statement.js">
+        <file name="handle-expression-statement.js" path="/home/yurik/Desktop/export-loader/src/handle-expression-statement.js">
           <metrics statements="10" coveredstatements="8" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
           <line num="1" count="2" type="stmt"/>
           <line num="2" count="2" type="stmt"/>
@@ -124,7 +124,7 @@
           <line num="14" count="0" type="stmt"/>
           <line num="20" count="2" type="stmt"/>
         </file>
-        <file name="handle-function-declaration.js" path="C:\Users\Yurasya\Desktop\no-export\src\handle-function-declaration.js">
+        <file name="handle-function-declaration.js" path="/home/yurik/Desktop/export-loader/src/handle-function-declaration.js">
           <metrics statements="8" coveredstatements="8" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
           <line num="2" count="4" type="cond" truecount="4" falsecount="0"/>
           <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
@@ -135,7 +135,7 @@
           <line num="10" count="3" type="stmt"/>
           <line num="13" count="2" type="stmt"/>
         </file>
-        <file name="handle-variable-declaration.js" path="C:\Users\Yurasya\Desktop\no-export\src\handle-variable-declaration.js">
+        <file name="handle-variable-declaration.js" path="/home/yurik/Desktop/export-loader/src/handle-variable-declaration.js">
           <metrics statements="12" coveredstatements="9" conditionals="9" coveredconditionals="4" methods="1" coveredmethods="1"/>
           <line num="4" count="8" type="cond" truecount="3" falsecount="1"/>
           <line num="5" count="0" type="stmt"/>
@@ -153,12 +153,12 @@
       </package>
       <package name="test-utils">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <file name="function-declaration.example.js" path="C:\Users\Yurasya\Desktop\no-export\test-utils\function-declaration.example.js">
+        <file name="function-declaration.example.js" path="/home/yurik/Desktop/export-loader/test-utils/function-declaration.example.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
           <line num="42" count="1" type="stmt"/>
         </file>
-        <file name="var-declaration.example.js" path="C:\Users\Yurasya\Desktop\no-export\test-utils\var-declaration.example.js">
+        <file name="var-declaration.example.js" path="/home/yurik/Desktop/export-loader/test-utils/var-declaration.example.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
           <line num="19" count="1" type="stmt"/>

@@ -1,5 +1,5 @@
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\class-declaration.js
+SF:/home/yurik/Desktop/export-loader/src/class-declaration.js
 FN:1,handleClassDeclaration
 FNF:1
 FNH:1
@@ -17,7 +17,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\esprima.js
+SF:/home/yurik/Desktop/export-loader/src/esprima.js
 FN:10,generateExports
 FN:11,(anonymous_1)
 FN:49,hashMapToInject
@@ -90,7 +90,7 @@ BRF:17
 BRH:13
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\export-loader.js
+SF:/home/yurik/Desktop/export-loader/src/export-loader.js
 FN:9,exportLoader
 FNF:1
 FNH:1
@@ -118,7 +118,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\handle-assignment-expression.js
+SF:/home/yurik/Desktop/export-loader/src/handle-assignment-expression.js
 FN:1,handleAssignmentExpression
 FNF:1
 FNH:1
@@ -152,7 +152,7 @@ BRF:12
 BRH:11
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\handle-default-expression.js
+SF:/home/yurik/Desktop/export-loader/src/handle-default-expression.js
 FN:1,handleDefaultExpression
 FNF:1
 FNH:0
@@ -169,7 +169,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\handle-export-named-declaration.js
+SF:/home/yurik/Desktop/export-loader/src/handle-export-named-declaration.js
 FN:1,handleExportNamedDeclaration
 FN:11,(anonymous_1)
 FN:18,(anonymous_2)
@@ -207,7 +207,7 @@ BRF:10
 BRH:10
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\handle-expression-statement.js
+SF:/home/yurik/Desktop/export-loader/src/handle-expression-statement.js
 FN:4,handleExpressionStatement
 FNF:1
 FNH:1
@@ -234,7 +234,7 @@ BRF:6
 BRH:3
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\handle-function-declaration.js
+SF:/home/yurik/Desktop/export-loader/src/handle-function-declaration.js
 FN:1,handleFunctionDeclaration
 FNF:1
 FNH:1
@@ -261,7 +261,7 @@ BRF:8
 BRH:7
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\src\handle-variable-declaration.js
+SF:/home/yurik/Desktop/export-loader/src/handle-variable-declaration.js
 FN:1,handleVariableDeclaration
 FNF:1
 FNH:1
@@ -293,7 +293,7 @@ BRF:9
 BRH:4
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\test-utils\function-declaration.example.js
+SF:/home/yurik/Desktop/export-loader/test-utils/function-declaration.example.js
 FNF:0
 FNH:0
 DA:1,1
@@ -304,7 +304,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Yurasya\Desktop\no-export\test-utils\var-declaration.example.js
+SF:/home/yurik/Desktop/export-loader/test-utils/var-declaration.example.js
 FNF:0
 FNH:0
 DA:1,1
