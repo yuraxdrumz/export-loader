@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1507620703194" clover="3.2.0">
-  <project timestamp="1507620703195" name="All files">
-    <metrics statements="123" coveredstatements="105" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13" elements="203" coveredelements="170" complexity="0" loc="123" ncloc="123" packages="2" files="11" classes="11">
+<coverage generated="1507621650337" clover="3.2.0">
+  <project timestamp="1507621650337" name="All files">
+    <metrics statements="124" coveredstatements="106" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13" elements="204" coveredelements="171" complexity="0" loc="124" ncloc="124" packages="2" files="11" classes="11">
       <package name="src">
-        <metrics statements="119" coveredstatements="101" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13"/>
+        <metrics statements="120" coveredstatements="102" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13"/>
         <file name="class-declaration.js" path="/home/yurik/Desktop/export-loader/src/class-declaration.js">
           <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -55,7 +55,7 @@
           <line num="64" count="1" type="stmt"/>
         </file>
         <file name="export-loader.js" path="/home/yurik/Desktop/export-loader/src/export-loader.js">
-          <metrics statements="15" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+          <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="1" count="1" type="stmt"/>
           <line num="2" count="1" type="stmt"/>
           <line num="3" count="1" type="stmt"/>
@@ -65,12 +65,13 @@
           <line num="12" count="1" type="cond" truecount="2" falsecount="0"/>
           <line num="14" count="1" type="stmt"/>
           <line num="15" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
-          <line num="27" count="0" type="stmt"/>
-          <line num="29" count="1" type="stmt"/>
-          <line num="32" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="26" count="1" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="30" count="1" type="stmt"/>
           <line num="33" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
         </file>
         <file name="handle-assignment-expression.js" path="/home/yurik/Desktop/export-loader/src/handle-assignment-expression.js">
           <metrics statements="11" coveredstatements="9" conditionals="12" coveredconditionals="11" methods="1" coveredmethods="1"/>
