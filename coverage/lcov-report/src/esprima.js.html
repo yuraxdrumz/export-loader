@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">85.37% </span>
+        <span class="strong">80.49% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>35/41</span>
+        <span class='fraction'>33/41</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">76.47% </span>
+        <span class="strong">70.59% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>13/17</span>
+        <span class='fraction'>12/17</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">87.18% </span>
+        <span class="strong">82.05% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>34/39</span>
+        <span class='fraction'>32/39</span>
       </div>
     </div>
   </div>
@@ -126,46 +126,46 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">21x</span>
-<span class="cline-any cline-yes">21x</span>
-<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">21x</span>
-<span class="cline-any cline-yes">21x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -196,9 +196,9 @@ function generateExports(esprima) {
       const { type } = declaration
       debug(type)
       switch ( type ) {
-        case 'ExportNamedDeclaration':
-          handleExportNamedDeclaration(insertName, debug, declaration)
-          break
+<span class="branch-0 cbranch-no" title="branch not covered" >        case 'ExportNamedDeclaration':</span>
+<span class="cstat-no" title="statement not covered" >          handleExportNamedDeclaration(insertName, debug, declaration)</span>
+<span class="cstat-no" title="statement not covered" >          break</span>
 <span class="branch-1 cbranch-no" title="branch not covered" >        case 'ClassDeclaration':</span>
 <span class="cstat-no" title="statement not covered" >          handleClassDeclaration(insertName, debug, declaration)</span>
 <span class="cstat-no" title="statement not covered" >          break</span>
@@ -214,8 +214,8 @@ function generateExports(esprima) {
 <span class="branch-5 cbranch-no" title="branch not covered" >        case 'ExportDefaultDeclaration':</span>
 <span class="cstat-no" title="statement not covered" >          debug(`Export default received, need to think what to do with it`)</span>
 <span class="cstat-no" title="statement not covered" >          break;</span>
-<span class="branch-6 cbranch-no" title="branch not covered" >        default:</span>
-<span class="cstat-no" title="statement not covered" >          debug(`An unhandled declaration type received: ${type}`)</span>
+        default:
+          debug(`An unhandled declaration type received: ${type}`)
       }
     }
     debug(`names:${JSON.stringify(names)}`)
@@ -229,8 +229,8 @@ function hashMapToInject(hashmap){
   return function insertName(name, isExport){
     <span class="missing-if-branch" title="if path not taken" >I</span>if(typeof name !== 'string') <span class="cstat-no" title="statement not covered" >debug(`name: ${JSON.stringify(name)} is not a string!!!`)</span>
     if( name[0] === name[0].toUpperCase() || isExport ){
-      if(hashmap[name]){
-        d(`key:${name} already exists!`)
+      <span class="missing-if-branch" title="if path not taken" >I</span>if(hashmap[name]){
+<span class="cstat-no" title="statement not covered" >        d(`key:${name} already exists!`)</span>
       }else{
         hashmap[name] = name
       }
@@ -250,7 +250,7 @@ module.exports = {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 10 2017 10:47:30 GMT+0300 (IDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 10 2017 10:52:31 GMT+0300 (IDT)
 </div>
 </div>
 <script src="../prettify.js"></script>

@@ -13,13 +13,12 @@ function exportLoader(content) {
     // get finalExports after parsing
     let { finalExports } = generateExports(esprima)(currentPath, readFileSync(currentPath,'utf8'))
     d(`finalExports is: ${finalExports}`)
-      d(`content before replacing:${JSON.stringify(content)}`)
     // replace all existing exports for duplicate error prevention
     content = content
       .replace(/export function/g,'function')
       .replace(/export (let|const|var)/g,'let')
       .replace(/export async function/g,'async function')
-      .replace(/^export.*\{([\s\S]*?)}$/gm, '')
+      .replace(/^export\s*{([\s\S]*?)}$/gm, '')
       .concat('\n')
       .concat(finalExports)
 

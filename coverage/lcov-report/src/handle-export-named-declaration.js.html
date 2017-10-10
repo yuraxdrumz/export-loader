@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">6.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>15/15</span>
+        <span class='fraction'>1/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>10/10</span>
+        <span class='fraction'>0/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/3</span>
+        <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">7.69% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>13/13</span>
+        <span class='fraction'>1/13</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -73,48 +73,48 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function handleExportNamedDeclaration(insertKeyFunc, debug, { declaration, specifiers }) {
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function <span class="fstat-no" title="function not covered" >handleExportNamedDeclaration(</span>insertKeyFunc, debug, { declaration, specifiers }) {
   let name
   let type
   let id
-  debug(`DECLERATION FROM EXPROT NAMED IS :${JSON.stringify(declaration)}`)
-  if(declaration){
-    type = declaration.type
-    id = declaration.id
+<span class="cstat-no" title="statement not covered" >  debug(`DECLERATION FROM EXPROT NAMED IS :${JSON.stringify(declaration)}`)</span>
+<span class="cstat-no" title="statement not covered" >  if(declaration){</span>
+<span class="cstat-no" title="statement not covered" >    type = declaration.type</span>
+<span class="cstat-no" title="statement not covered" >    id = declaration.id</span>
   }
-  if(declaration &amp;&amp; declaration.declarations){
-    return declaration.declarations.map(dec=&gt;insertKeyFunc(dec.id.name, true))
+<span class="cstat-no" title="statement not covered" >  if(declaration &amp;&amp; declaration.declarations){</span>
+<span class="cstat-no" title="statement not covered" >    return declaration.declarations.map(<span class="fstat-no" title="function not covered" >de</span>c=&gt;<span class="cstat-no" title="statement not covered" >insertKeyFunc(dec.id.name, true))</span></span>
   }
-  if ( type &amp;&amp; type === 'FunctionDeclaration' ) {
-    name = id.name
-    return insertKeyFunc(name, true)
+<span class="cstat-no" title="statement not covered" >  if ( type &amp;&amp; type === 'FunctionDeclaration' ) {</span>
+<span class="cstat-no" title="statement not covered" >    name = id.name</span>
+<span class="cstat-no" title="statement not covered" >    return insertKeyFunc(name, true)</span>
   }else {
-    try{
-      specifiers.map(spec=&gt;insertKeyFunc(spec.exported.name, true))
+<span class="cstat-no" title="statement not covered" >    try{</span>
+<span class="cstat-no" title="statement not covered" >      specifiers.map(<span class="fstat-no" title="function not covered" >sp</span>ec=&gt;<span class="cstat-no" title="statement not covered" >insertKeyFunc(spec.exported.name, true))</span></span>
     }catch(e){
-      debug(`error in handleExportNamed:${e}`)
+<span class="cstat-no" title="statement not covered" >      debug(`error in handleExportNamed:${e}`)</span>
     }
   }
 }
@@ -127,7 +127,7 @@ module.exports = {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 10 2017 10:47:30 GMT+0300 (IDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 10 2017 10:52:31 GMT+0300 (IDT)
 </div>
 </div>
 <script src="../prettify.js"></script>

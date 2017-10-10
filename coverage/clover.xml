@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1507621650337" clover="3.2.0">
-  <project timestamp="1507621650337" name="All files">
-    <metrics statements="124" coveredstatements="106" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13" elements="204" coveredelements="171" complexity="0" loc="124" ncloc="124" packages="2" files="11" classes="11">
+<coverage generated="1507621951798" clover="3.2.0">
+  <project timestamp="1507621951798" name="All files">
+    <metrics statements="124" coveredstatements="92" conditionals="66" coveredconditionals="41" methods="14" coveredmethods="10" elements="204" coveredelements="143" complexity="0" loc="124" ncloc="124" packages="2" files="11" classes="11">
       <package name="src">
-        <metrics statements="120" coveredstatements="102" conditionals="66" coveredconditionals="52" methods="14" coveredmethods="13"/>
+        <metrics statements="120" coveredstatements="88" conditionals="66" coveredconditionals="41" methods="14" coveredmethods="10"/>
         <file name="class-declaration.js" path="/home/yurik/Desktop/export-loader/src/class-declaration.js">
           <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -13,7 +13,7 @@
           <line num="8" count="2" type="stmt"/>
         </file>
         <file name="esprima.js" path="/home/yurik/Desktop/export-loader/src/esprima.js">
-          <metrics statements="39" coveredstatements="34" conditionals="17" coveredconditionals="13" methods="4" coveredmethods="4"/>
+          <metrics statements="39" coveredstatements="32" conditionals="17" coveredconditionals="12" methods="4" coveredmethods="4"/>
           <line num="1" count="1" type="stmt"/>
           <line num="2" count="1" type="stmt"/>
           <line num="3" count="1" type="stmt"/>
@@ -26,32 +26,32 @@
           <line num="14" count="2" type="stmt"/>
           <line num="15" count="2" type="stmt"/>
           <line num="16" count="2" type="stmt"/>
-          <line num="17" count="21" type="stmt"/>
-          <line num="18" count="21" type="stmt"/>
-          <line num="19" count="21" type="cond" truecount="4" falsecount="3"/>
-          <line num="21" count="7" type="stmt"/>
-          <line num="22" count="7" type="stmt"/>
+          <line num="17" count="15" type="stmt"/>
+          <line num="18" count="15" type="stmt"/>
+          <line num="19" count="15" type="cond" truecount="4" falsecount="3"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
           <line num="24" count="0" type="stmt"/>
           <line num="25" count="0" type="stmt"/>
-          <line num="27" count="6" type="stmt"/>
-          <line num="28" count="6" type="stmt"/>
-          <line num="30" count="7" type="stmt"/>
-          <line num="31" count="7" type="stmt"/>
+          <line num="27" count="5" type="stmt"/>
+          <line num="28" count="5" type="stmt"/>
+          <line num="30" count="3" type="stmt"/>
+          <line num="31" count="3" type="stmt"/>
           <line num="33" count="1" type="stmt"/>
           <line num="34" count="1" type="stmt"/>
           <line num="36" count="0" type="stmt"/>
           <line num="37" count="0" type="stmt"/>
-          <line num="39" count="0" type="stmt"/>
+          <line num="39" count="6" type="stmt"/>
           <line num="42" count="2" type="stmt"/>
           <line num="43" count="2" type="stmt"/>
           <line num="44" count="2" type="stmt"/>
           <line num="45" count="2" type="stmt"/>
           <line num="50" count="2" type="stmt"/>
-          <line num="51" count="21" type="cond" truecount="1" falsecount="1"/>
-          <line num="52" count="21" type="cond" truecount="4" falsecount="0"/>
-          <line num="53" count="13" type="cond" truecount="2" falsecount="0"/>
-          <line num="54" count="1" type="stmt"/>
-          <line num="56" count="12" type="stmt"/>
+          <line num="51" count="9" type="cond" truecount="1" falsecount="1"/>
+          <line num="52" count="9" type="cond" truecount="4" falsecount="0"/>
+          <line num="53" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="56" count="2" type="stmt"/>
           <line num="64" count="1" type="stmt"/>
         </file>
         <file name="export-loader.js" path="/home/yurik/Desktop/export-loader/src/export-loader.js">
@@ -75,16 +75,16 @@
         </file>
         <file name="handle-assignment-expression.js" path="/home/yurik/Desktop/export-loader/src/handle-assignment-expression.js">
           <metrics statements="11" coveredstatements="9" conditionals="12" coveredconditionals="11" methods="1" coveredmethods="1"/>
-          <line num="3" count="6" type="stmt"/>
-          <line num="4" count="6" type="cond" truecount="4" falsecount="1"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="6" count="6" type="cond" truecount="7" falsecount="0"/>
-          <line num="8" count="5" type="stmt"/>
-          <line num="9" count="5" type="stmt"/>
-          <line num="12" count="1" type="stmt"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="4" count="5" type="cond" truecount="5" falsecount="0"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="3" type="cond" truecount="6" falsecount="1"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
           <line num="15" count="0" type="stmt"/>
-          <line num="17" count="6" type="stmt"/>
-          <line num="18" count="6" type="stmt"/>
+          <line num="17" count="5" type="stmt"/>
+          <line num="18" count="5" type="stmt"/>
           <line num="21" count="2" type="stmt"/>
         </file>
         <file name="handle-default-expression.js" path="/home/yurik/Desktop/export-loader/src/handle-default-expression.js">
@@ -97,30 +97,30 @@
           <line num="12" count="2" type="stmt"/>
         </file>
         <file name="handle-export-named-declaration.js" path="/home/yurik/Desktop/export-loader/src/handle-export-named-declaration.js">
-          <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
-          <line num="5" count="7" type="stmt"/>
-          <line num="6" count="7" type="cond" truecount="2" falsecount="0"/>
-          <line num="7" count="6" type="stmt"/>
-          <line num="8" count="6" type="stmt"/>
-          <line num="10" count="7" type="cond" truecount="4" falsecount="0"/>
-          <line num="11" count="4" type="stmt"/>
-          <line num="13" count="3" type="cond" truecount="4" falsecount="0"/>
-          <line num="14" count="2" type="stmt"/>
-          <line num="15" count="2" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="18" count="1" type="stmt"/>
-          <line num="20" count="1" type="stmt"/>
+          <metrics statements="13" coveredstatements="1" conditionals="10" coveredconditionals="0" methods="3" coveredmethods="0"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="10" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="11" count="0" type="stmt"/>
+          <line num="13" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
           <line num="25" count="2" type="stmt"/>
         </file>
         <file name="handle-expression-statement.js" path="/home/yurik/Desktop/export-loader/src/handle-expression-statement.js">
           <metrics statements="10" coveredstatements="8" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
           <line num="1" count="2" type="stmt"/>
           <line num="2" count="2" type="stmt"/>
-          <line num="5" count="6" type="stmt"/>
-          <line num="6" count="6" type="cond" truecount="2" falsecount="2"/>
-          <line num="8" count="6" type="cond" truecount="1" falsecount="1"/>
-          <line num="10" count="6" type="stmt"/>
-          <line num="11" count="6" type="stmt"/>
+          <line num="5" count="5" type="stmt"/>
+          <line num="6" count="5" type="cond" truecount="2" falsecount="2"/>
+          <line num="8" count="5" type="cond" truecount="1" falsecount="1"/>
+          <line num="10" count="5" type="stmt"/>
+          <line num="11" count="5" type="stmt"/>
           <line num="13" count="0" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
           <line num="20" count="2" type="stmt"/>
@@ -138,17 +138,17 @@
         </file>
         <file name="handle-variable-declaration.js" path="/home/yurik/Desktop/export-loader/src/handle-variable-declaration.js">
           <metrics statements="12" coveredstatements="9" conditionals="9" coveredconditionals="4" methods="1" coveredmethods="1"/>
-          <line num="4" count="8" type="cond" truecount="3" falsecount="1"/>
+          <line num="4" count="4" type="cond" truecount="3" falsecount="1"/>
           <line num="5" count="0" type="stmt"/>
-          <line num="6" count="8" type="cond" truecount="1" falsecount="4"/>
+          <line num="6" count="4" type="cond" truecount="1" falsecount="4"/>
           <line num="11" count="0" type="stmt"/>
           <line num="12" count="0" type="stmt"/>
-          <line num="14" count="8" type="stmt"/>
-          <line num="15" count="8" type="stmt"/>
-          <line num="17" count="8" type="stmt"/>
-          <line num="19" count="8" type="stmt"/>
-          <line num="21" count="8" type="stmt"/>
-          <line num="22" count="8" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="15" count="4" type="stmt"/>
+          <line num="17" count="4" type="stmt"/>
+          <line num="19" count="4" type="stmt"/>
+          <line num="21" count="4" type="stmt"/>
+          <line num="22" count="4" type="stmt"/>
           <line num="25" count="2" type="stmt"/>
         </file>
       </package>
